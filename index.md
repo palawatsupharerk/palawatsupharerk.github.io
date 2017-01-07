@@ -1,6 +1,7 @@
 ##A Few Commandments of Data Validation after data is generated from SAS code
 1. Data Validation means different thing to diffrent people
    ###Example: how to validate result of 2 powered to 1009 after running SAS code
+   Result: 
    ```SAS
    proc groovy;
        submit;
@@ -14,11 +15,18 @@
        endsubmit;
   Run;
   ```
-2. Skill disparity and bias of people who conducts data validation plays significant role in data validation
+2. Skill disparity and bias of person who conducts data validation plays significant role in drawing conclusion
    ###Example
    ```SAS
+   data _null_;
+       do i = 1 to 10;
+           x+ 0.1;
+       end;
+       if x = 1 then 
+           put 'x is equal to 1';
+       else
+           put 'x is not equal to 1';
+   run;
    ```
 3. False Positive and Negative result from validation may lead to loss of reputation or revenue
-   ###Example
-   ```SAS
-   ```
+  
