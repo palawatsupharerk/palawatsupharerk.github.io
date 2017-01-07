@@ -1,10 +1,10 @@
 ##A Few Commandments of Data Validation after data is generated from SAS code
-1. Data Validation is not the same as Verification
-   ###Example: how to validate result of 2 powered to 1009 obtained from unidentified source:
+1. Data Validation is not the same as Verification. Data validation is mandated by FDA regulation.
+   ###Example: how to validate result of 2 powered to 1009 obtained from unknown source:
    ```
 2**1009 = 5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245670299614498700719996264535590197791934024641512541262359795191593953928908168990292758500391456212260452596575509589842140073806143686060649302051520512
 ```
-   ###Answer  
+   ###Reproducibility from SAS Enterprise Guide 6.1  
    ```SAS
    proc groovy;
        submit;
@@ -18,7 +18,10 @@
        endsubmit;
   Run;
   ```
-2. Skill disparity and bias of person who conducts data validation plays significant role in drawing conclusion
+  ###Cross-validation from SAS Viya Python Jupyter Notebook (Python 3.5.2)
+  ```  2**1009=5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245670299614498700710006264535590197791934024641512541262359795191593953928908168990292758500391456212260452596575509589842140073806143686060649302051520512
+  ```
+2. Skill disparity and bias of person who conducts data validation play significant role in drawing conclusion
 
    ###Example
    ```SAS
