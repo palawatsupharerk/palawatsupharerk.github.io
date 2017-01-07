@@ -1,4 +1,4 @@
-##10 Commandments of Data Validation
+##A Few Commandments of Data Validation from SAS code
 1. Data Validation means different thing to diffrent people
    ###Example: how to validate result of 2 powered to 1009 using SAS code
    ```SAS
