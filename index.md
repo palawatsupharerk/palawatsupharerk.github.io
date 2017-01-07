@@ -15,10 +15,10 @@
   Run;
   ```
 2. Skill disparity and bias of people who conducts data validation plays significant role in data validation
-###Example
-```
-```
+   ###Example
+   ```
+   ```
 3. False Positive and Negative result from validation may lead to loss of reputation or revenue
-###Example
-```
-```
+   ###Example
+   ```
+   ```
