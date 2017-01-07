@@ -1,6 +1,6 @@
 ## 10 Commandments of Data Validation
 1. Data Validation means different thing to diffrent people
-   ### Example
+   ### Example: how to validate 2 powered to 1009
    ```
    proc groovy;
        submit;
@@ -13,7 +13,7 @@
            println "length of digit = " + l
        endsubmit;
   Run;
-
+  ```
 2. Skill disparity and bias of people who conducts data validation plays significant role in data validation
 ### Example
 3. False Positive and Negative result from validation may lead to loss of reputation or revenue
