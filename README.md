@@ -11,7 +11,7 @@ To help you understand what modeling process is, here's a simplified step-by-ste
 6. Generate insights and data visualization
 
 # Part I - Formulate the problem
-The first step in machine learning is to decide what you want to predict, which is known as the 'lable' or 'target answer'. Investing time in deciding which target makes most sense for you to predict will save you from building models that don't answer your question.
+The first step in machine learning is to decide what you want to predict, which is known as the `lable` or `target answer`. Investing time in deciding which target makes most sense for you to predict will save you from building models that don't answer your question.
 
 # Part II - Clean Your Data
 Remove inaccurate or irrelevant information from your dataset. Incorrect data can lead to false conclusions when you're modeling.
