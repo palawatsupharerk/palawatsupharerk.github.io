@@ -65,7 +65,7 @@ Remove inaccurate or irrelevant information from your dataset. Incorrect data ca
            put 'x is not equal to 1';
    run;
 ```
-* `False Positive` and `False Negative` result from validation may lead to loss of reputation or revenue. Positive result means that according to the test, the patient has the disease. A Negative result means the test concludes that the patient doesn't have the disease. Therefore, False Positive implies defect does not exist in reality but your test result from experiment design or methodology concludes Positive or capture it whereas False Neagtive implies defect does exist in reality but your test result from experiment design or methodology concludes Negative or cannot capture it.
+* `False Positive` and `False Negative` result from validation may lead to loss of reputation or revenue. Positive result means that according to the test, the patient has the disease. A Negative result means the test concludes that the patient doesn't have the disease. Therefore, False Positive implies defect does not exist in reality but your test result from experiment design or methodology concludes Positive or capture it whereas False Negative implies defect does exist in reality but your test result from experiment design or methodology concludes Negative or cannot capture it.
 
 * No `Gold Standard` for validation has yet emerged
 
