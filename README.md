@@ -5,7 +5,7 @@ To help you understand what modeling process is, here's a simplified step-by-ste
 
 1. Formulate the problem
 2. Clean your data
-3. Identify features or feature engineering
+3. Identify features or `feature engineering`
 4. Select algorithm
 5. Create and validate your model
 6. Generate insights and data visualization
