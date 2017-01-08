@@ -1,3 +1,12 @@
+# What is the Data Science?
+[Data Science Venn Diagram v2.0](http://www.anlytcs.com/2014/01/data-science-venn-diagram-v20.html)
+To help you understand what modeling process is, here's a simplified step-by-step breakdown of how to create a predictive model.
+1. Clean your data
+2. Identify features or feature engineering
+3. Select algorithm
+4. Create and validate your model
+5. Generate insights and data visualization
+
 # Part I - Clean Your Data
 Remove inaccurate or irrelevant information from your dataset. Incorrect data can lead to false conclusions when you're modeling.
 
