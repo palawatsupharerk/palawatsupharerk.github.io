@@ -10,7 +10,7 @@ To help you understand what modeling process is, here's a simplified step-by-ste
 5. Create and validate your model
 6. Generate insights and data visualization
 
-# Part I - Formulate the problem
+# Part I - Formulate the problem by asking the `right` question
 The first step in `Machine Learning (ML)` is to decide what you want to predict, which is known as the `lable` or `target answer`. Investing time in deciding which target makes most sense for you to predict will save you from building models that don't answer your question.
 
 # Part II - Clean Your Data
