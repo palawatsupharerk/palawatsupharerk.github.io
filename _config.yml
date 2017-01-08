@@ -1,6 +1,0 @@
-name: palawat supharerk
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
-
-theme: jekyll-theme-cayman
