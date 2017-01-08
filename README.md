@@ -1,3 +1,6 @@
+#Part I - Clean Your Data
+Remove inaccurate or irrelevant information from your dataset. Incorrect data can lead to false conclusions when you're modeling.
+
 ## A Few Commandments of Data Validation 
 * Data Validation is not the same as Verification. Data validation is mandated by FDA regulation.
 
