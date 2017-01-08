@@ -1,5 +1,5 @@
 ---
-title:Palawat Supharerk
+title: Palawat Supharerk
 ---
 ##A Few Commandments of Data Validation 
 1. Data Validation is not the same as Verification. Data validation is mandated by FDA regulation.
