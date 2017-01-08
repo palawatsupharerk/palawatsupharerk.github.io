@@ -1,37 +1,45 @@
 ## Welcome to GitHub Pages Sample
-
-You can use the [editor on GitHub](https://github.com/palawatsupharerk/palawatsupharerk.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## A Few Commandments of Data Validation 
+1. Data Validation is not the same as Verification. Data validation is mandated by FDA regulation.
+   ###Example: how to validate result of 2 powered to 1009 obtained from unknown source:
+   ```
+2**1009 = 5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245670299614498700719996264535590197791934024641512541262359795191593953928908168990292758500391456212260452596575509589842140073806143686060649302051520512
 ```
+   ###Reproducibility from SAS Enterprise Guide 6.1  
+   ```SAS
+   proc groovy;
+       submit;
+           import java.math.BigInteger
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+           def x = BigInteger.valueOf(2).pow(BigInteger.valueOf(1009).intValue())
+           def y = x.toString()
+           def l = y.length()
+           println "2 ** 1009 is " + y
+           println "length of digit = " + l
+       endsubmit;
+  Run;
+  
+  
+  2**1009 is 5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245670299614498700710006264535590197791934024641512541262359795191593953928908168990292758500391456212260452596575509589842140073806143686060649302051520512
+  
+  length of digit = 304
+  ```
+  ###Cross-validation from SAS Viya Python Jupyter Notebook (Python 3.5.2)
+  ```
+  2**1009 = 5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245670299614498700710006264535590197791934024641512541262359795191593953928908168990292758500391456212260452596575509589842140073806143686060649302051520512
+  ```
+2. Skill disparity and bias of person who conducts data validation play significant role in drawing conclusion
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/palawatsupharerk/palawatsupharerk.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+   ###Example
+   ```SAS
+   data _null_;
+       do i = 1 to 10;
+           x + 0.1;
+       end;
+       if x = 1 then 
+           put 'x is equal to 1';
+       else
+           put 'x is not equal to 1';
+   run;
+   ```
+3. False Positive and Negative result from validation may lead to loss of reputation or revenue
