@@ -3,13 +3,17 @@
 
 To help you understand what modeling process is, here's a simplified step-by-step breakdown of how to create a predictive model.
 
-1. Clean your data
-2. Identify features or feature engineering
-3. Select algorithm
-4. Create and validate your model
-5. Generate insights and data visualization
+1. Formulate the problem
+2. Clean your data
+3. Identify features or feature engineering
+4. Select algorithm
+5. Create and validate your model
+6. Generate insights and data visualization
 
-# Part I - Clean Your Data
+# Part I - Formulate the problem
+The first step in machine learning is to decide what you want to predict, which is known as the 'lable' or 'target answer'. Investing time in deciding which target makes most sense for you to predict will save you from building models that don't answer your question.
+
+# Part II - Clean Your Data
 Remove inaccurate or irrelevant information from your dataset. Incorrect data can lead to false conclusions when you're modeling.
 
 ## A Few Commandments of Data Validation 
