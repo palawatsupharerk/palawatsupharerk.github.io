@@ -1,6 +1,7 @@
 ---
 title: Palawat Supharerk
 ---
+
 ##A Few Commandments of Data Validation 
 1. Data Validation is not the same as Verification. Data validation is mandated by FDA regulation.
    ###Example: how to validate result of 2 powered to 1009 obtained from unknown source:
