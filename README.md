@@ -5,7 +5,7 @@ To help you understand what modeling process is, here's a simplified step-by-ste
 
 1. Formulate the problem
 2. Clean your data
-3. Identify features or `feature engineering`
+3. Identify features or `Feature Engineering`
 4. Select algorithm
 5. Create and validate your model
 6. Generate insights and data visualization
@@ -50,7 +50,7 @@ Remove inaccurate or irrelevant information from your dataset. Incorrect data ca
 ```
   2**1009 = 5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245670299614498700710006264535590197791934024641512541262359795191593953928908168990292758500391456212260452596575509589842140073806143686060649302051520512
 ```
-* Skill disparity and bias of person who conducts data validation play significant role in drawing conclusion
+* Skill disparity and bias of person who conducts data validation play significant role in drawing conclusion.
 
 ### Example: What do you expect the result?
 
@@ -65,4 +65,7 @@ Remove inaccurate or irrelevant information from your dataset. Incorrect data ca
            put 'x is not equal to 1';
    run;
 ```
-* `False Positive` and `False Negative` result from validation may lead to loss of reputation or revenue
+* `False Positive` and `False Negative` result from validation may lead to loss of reputation or revenue. Positive result means that according to the test, the patient has the disease. A Negative result means the test concludes that the patient doesn't have the disease. Therefore, False Positive refers to defect does not exist in reality but your test result from experiment design or methodology concludes Positive or capture it whereas False Neagtive refers to defect does exist in reality but your test result from experiment design or methodology concludes Negative or can not capture it.
+
+* No `Gold Standard` for validation has yet emerged
+
